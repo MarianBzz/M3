@@ -36,10 +36,10 @@ describe("El método .then de una promesa", function(){
     promise = new $Promise(noop);
     s1 = function (/* data */)   { /* use data */ };
     e1 = function (/* reason */) { /* handle reason */ };
-    s2 = function (/* data */)   { /* use data */ };
+    s2 = function (/* data */)   { /* use data */ }; 
     e2 = function (/* reason */) { /* handle reason */ };
   });
-
+// adsadasd
   it('agrega grupos de handlers (funciones callbacks) a la promesa', function(){
     promise.then( s1, e1 );
     expect( promise._handlerGroups[0].successCb ).toBe( s1 );
